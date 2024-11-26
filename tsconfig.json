@@ -17,10 +17,7 @@
 		"strict": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true,
-
-		/* Temporarily until everything is moved to typescript */
-		"allowJs": true
+		"noFallthroughCasesInSwitch": true
 	},
 	"include": ["src"]
 }

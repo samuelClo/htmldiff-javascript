@@ -1,35 +1,38 @@
 {
-	"name": "htmldiff-javascript",
-	"description": "Typescript port of HtmlDiff.Net which is itself a C# port of HtmlDiff",
-	"author": {
-		"email": "jibin.thomas2706@gmail.com",
-		"name": "Jibin Thomas"
-	},
-	"license": "MIT",
-	"version": "0.0.5",
-	"type": "module",
-	"files": [
-		"dist"
-	],
-	"main": "./dist/htmldiff.umd.cjs",
-	"module": "./dist/htmldiff.js",
-	"types": "./dist/Diff.d.ts",
-	"exports": {
-		".": {
-			"import": "./dist/htmldiff.js",
-			"require": "./dist/htmldiff.umd.cjs",
-			"types": "./dist/Diff.d.ts"
-		}
-	},
-	"scripts": {
-		"dev": "vite src/demo",
-		"build": "tsc && vite build",
-		"publish": "npm publish --access public"
-	},
-	"devDependencies": {
-		"@types/node": "^20.4.4",
-		"typescript": "^5.1.6",
-		"vite": "^4.4.6",
-		"vite-plugin-dts": "^3.3.1"
-	}
+  "name": "htmldiff-javascript",
+  "description": "Typescript port of HtmlDiff.Net which is itself a C# port of HtmlDiff",
+  "author": {
+    "email": "jibin.thomas2706@gmail.com",
+    "name": "Jibin Thomas"
+  },
+  "license": "MIT",
+  "version": "0.0.5",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/htmldiff.umd.cjs",
+  "module": "./dist/htmldiff.js",
+  "types": "./dist/Diff.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/htmldiff.js",
+      "require": "./dist/htmldiff.umd.cjs",
+      "types": "./dist/Diff.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite src/demo",
+    "build": "tsc && vite build",
+    "publish": "npm publish --access public",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0",
+    "prettier": "^3.4.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.6",
+    "vite-plugin-dts": "^4.3.0",
+    "vitest": "^2.1.6"
+  }
 }
